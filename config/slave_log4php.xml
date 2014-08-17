@@ -1,0 +1,10 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+    <appender name="myAppender" class="LoggerAppenderFile">
+        <param name="file" value="/tmp/slave_live.log" />
+        <layout class="LoggerLayoutTTCC" />
+    </appender>
+    <root>
+        <level value="INFO" />
+        <appender_ref ref="myAppender" />
+    </root>
+</configuration>
